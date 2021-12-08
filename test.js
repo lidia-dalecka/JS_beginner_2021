@@ -1,12 +1,22 @@
-var str = "hello, world";
-var str2 = str.slice(2, 9);
+var myArray = [];
+myArray[0] = 25;
+myArray[1] = 35;
+myArray[2] = true;
+myArray[3] = "hello";
+console.log(myArray[0]);
+console.log(myArray);
+myArray[2] = false;
+myArray2 = [10, 20, "hi", false];
+var myArrey3=new Array(5);
 
-console.log(str2);
+console.log(myArray2.length);
 
-var str3 = str.slice(2);
-console.log(str3);
+console.log(myArray2.sort());
 
-var tags = "meat, ham, salami, pork, beef, chicken";
-var tagsArray = tags.split(",");
+console.log(myArray2.reverse());
 
-console.log(tagsArray);
+
+
+
+
+
