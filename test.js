@@ -1,12 +1,9 @@
-function getAverage (a,b){
+var a="string";
+var b=5;
 
-    var average =(a+b) /2; //local variable; we can make it global by defining it outside the function: var average=0;
-    console.log(average);
-    return average;
+//double negative
+if(!isNaN(a)){
+    console.log("it is a number" + (a+b));
+} else {
+    console.log("it is not a number")
 }
-var myResult = getAverage(7,11); //global variable
-
-function logResult(){
-    console.log("the average is " + myResult + "inside the function");
-}
-logResult();
