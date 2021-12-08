@@ -1,9 +1,4 @@
-var a="string";
-var b=5;
+var string1="Abc";
+var string2="Bcd";
 
-//double negative
-if(!isNaN(a)){
-    console.log("it is a number" + (a+b));
-} else {
-    console.log("it is not a number")
-}
+console.log(string1<string2);
