@@ -1,22 +1,25 @@
-var myArray = [];
-myArray[0] = 25;
-myArray[1] = 35;
-myArray[2] = true;
-myArray[3] = "hello";
-console.log(myArray[0]);
-console.log(myArray);
-myArray[2] = false;
-myArray2 = [10, 20, "hi", false];
-var myArrey3=new Array(5);
+var myArray = new Array();
+myArray[0] = 8;
+myArray[1] = "hello";
 
-console.log(myArray2.length);
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Lidia";
 
-console.log(myArray2.sort());
+console.log(myCar.driver);
 
-console.log(myArray2.reverse());
+myCar.drive = function () {
+    console.log("now driving");
+};
 
-
-
-
-
+myCar.drive();
+var myCar2 = {
+    maxSpeed: 70,
+    driver: "David",
+    drive: function (speed, time) { 
+        console.log(speed*time); 
+    }
+};
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
 
