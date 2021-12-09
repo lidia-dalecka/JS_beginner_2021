@@ -39,6 +39,4 @@ if(birthday.getTime==birthday2.getTime){
     console.log("birthdays are equal");
 } else {
     console.log("birthdays are not equal");
-
-
-
+}
