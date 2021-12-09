@@ -1,33 +1,12 @@
-/*var myMessage=document.getElementById("message")
+var myForm = document.forms.myForm;
+var message = document.getElementById("message");
 
-function showMessage(){
-
-    myMessage.className="show";
-}
-
-setTimeout(showMessage, 3000);
-*/
-
-var colourChanger = document.getElementById("colour-changer");
-var colour = ["red", "blue", "green", "pink"];
-var counter = 0;
-
-function changeColour() {
-
-    if (counter >= colour.length) {   //loop of colours
-        counter = 0;
+myForm.onsubmit = function () {
+    if (myForm.name.value == "") {
+        message.innerHTML = "please enter a name";
+        return false;
+    } else {
+        message.innerHTML = "";
+        return true;
     }
-
-    colourChanger.style.background = colour[counter];
-    counter++;
-
-}
-//bellow haw we stop the timer
-var myTimer = setInterval(changeColour, 3000);
-
-colourChanger.onclick = function () {
-
-    clearInterval(myTimer);
-    colourChanger.innerHTML = "Timer stopped";
-
 };
